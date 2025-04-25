@@ -111,7 +111,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#">Αρχική</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Ηλεκτρολόγοι</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Γίνε Συνεργάτης</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Επικοινωνία</a></li>
         </ul>
       </div>
@@ -132,8 +132,23 @@
 
   <!-- Search Filters -->
   <div class="container my-4 search-section">
-    <h3 class="mb-3">🔎 Αναζήτησε Ηλεκτρολόγους</h3>
+    <h3 class="mb-3">🔎 Αναζήτησε Τεχνικούς</h3>
     <form class="row g-3">
+       
+      <div class="col-md-4">
+        <label for="speciality" class="form-label">Ειδικότητα Τεχνίτη</label>
+        <select class="form-select" id="speciality">
+          <option selected disabled>Επιλέξτε Ειδικότητα</option>
+          <option>Υδραυλικοί</option>
+          <option>Ηλεκτρολόγοι</option>
+          <option>Ξυλουργοί</option>
+          <option>Ελαιοχρωματιστές</option>
+          <option>Ξυλουργοί</option>
+          <option>Eπιπλοποιοί</option>
+          <option>Τεχνικοί Θέρμανσης</option>
+        </select>
+      </div>
+
       <div class="col-md-4">
         <label for="city" class="form-label">Πόλη</label>
         <select id="city" class="form-select">
@@ -146,16 +161,6 @@
       <div class="col-md-4">
         <label for="price" class="form-label">Τιμή έως</label>
         <input type="number" class="form-control" id="price" placeholder="π.χ. 50">
-      </div>
-      <div class="col-md-4">
-        <label for="stars" class="form-label">Αστέρια</label>
-        <select id="stars" class="form-select">
-          <option selected>Επιλέξτε...</option>
-          <option>⭐ και άνω</option>
-          <option>⭐⭐ και άνω</option>
-          <option>⭐⭐⭐ και άνω</option>
-          <option>⭐⭐⭐⭐ και άνω</option>
-        </select>
       </div>
     </form>
   </div>
@@ -172,19 +177,19 @@
   
 
   <!-- Electricians Section -->
+    
   <div class="container">
     <div class="row g-4">
       <!-- Electrician Card -->
-      <div class="col-md-4">
+     <!--   <div class="col-md-4">
         <div class="card p-3" style="background-color: #fff9db;">
           <div class="text-center">
             <img src="https://cdn-icons-png.flaticon.com/512/1804/1804368.png" alt="avatar" width="80">
           </div>
           <div class="card-body">
             <h5 class="card-title">Γιάννης Ζώτος</h5>
-            <p class="mb-1">⭐️ 4.8 (23 αξιολογήσεις)</p>
-            <p class="mb-1"><strong>💡 Σχετικά:</strong> Με πολυετή εμπειρία και έμφαση στη λεπτομέρεια, παρέχω αξιόπιστες και ασφαλείς λύσεις για κάθε ηλεκτρολογική ανάγκη.</p>
-            <p class="mb-1"><strong>📜 Πιστοποιήσεις:</strong> Αδειούχος Ηλεκτρολόγος</p>
+            <p class="mb-1"><strong>📜 Eιδικοτήτα:</strong> Ηλεκτρολόγος</p>
+            <p class="mb-1"><strong>💡 Σχετικά:</strong> Με πολυετή εμπειρία και έμφαση στη λεπτομέρεια, παρέχω αξιόπιστες και ασφαλείς λύσεις για κάθε ηλεκτρολογική ανάγκη.</p>           
             <p class="mb-1"><strong>🛠 Επιμέρους Ειδικότητες:</strong> Επανακαλωδίωση, Φωτισμός, Έξυπνα Σπίτια</p>
             <p class="mb-1"><strong>💶 Τιμή:</strong> €40</p>
             <p class="mb-1"><a href="tel:6987123456" class="btn btn-primary btn-sm rounded-pill"><strong>📞 Τηλέφωνο:</strong> 6987 123 456</a></p>
@@ -197,7 +202,34 @@
             <a href="#" class="btn btn-primary w-100">Κλείσε Ραντεβού</a>
           </div>
         </div>
+      </div> -->
+      
+
+      <div class="col-md-4">
+        <div class="card shadow rounded-4 border-0 overflow-hidden" style="background-color: #fefdf9;">
+      
+          <!-- Card Content -->
+          <div class="card-body p-4">
+            
+            <h5 class="card-title text-center mb-2 fw-bold text-primary">Γιάννης Ζώτος</h5>
+            <p class="mb-1"><strong>📜 Ειδικότητα:</strong>  <span class="badge bg-primary" style="font-size: 1rem;">Ηλεκτρολόγος</span></p>
+            <p class="text-muted  mb-1 fst-italic"><strong>💡 Σχετικά:</strong> Με πολυετή εμπειρία και έμφαση στη λεπτομέρεια, παρέχω αξιόπιστες και ασφαλείς λύσεις για κάθε ηλεκτρολογική ανάγκη.</p>           
+            <p class="mb-1"><strong>🛠 Επιμέρους:</strong> Επανακαλωδίωση, Φωτισμός, Έξυπνα Σπίτια</p>
+            <p class="mb-1"><strong>💶 Τιμή:</strong> €40</p>
+            <p class="mb-1"><strong>📍 Πόλη:</strong> Αθήνα</p>
+            <p class="mb-1"><strong>🗓️ Διαθεσιμότητα:</strong> Δευτ - Παρ 09:00 - 17:00</p>
+            <div class="my-3">
+              <span class="badge bg-info text-dark me-1">#οικονομικός</span>
+              <span class="badge bg-info text-dark">#εμπειρία</span>
+            </div>
+            <a href="tel:6987123456" class="btn btn-outline-primary w-100 mb-2 rounded-pill">📞 6987 123 456</a>
+          
+          </div>
+        </div>
       </div>
+      
+     
+      
 
       <!-- Another Electrician Card -->
       <div class="col-md-4">
@@ -221,6 +253,84 @@
       <!-- More cards here -->
     </div>
   </div>
+
+
+<!-- Categories Navigation Bar -->
+<div class="container mt-5">
+  <div class="row row-cols-2 row-cols-md-6 g-4 text-center">
+    <div class="col">
+      <div>
+        <img src="./images/cleaning.png" width="60" alt="Καθαρισμός">
+        <p>Καθαρισμός</p>
+      </div>
+    </div>
+    <div class="col">
+      <div>
+        <img src="./images/moving-home.png" width="60" alt="Μετακομισείς">
+        <p>Μετακομισείς</p>
+      </div>
+    </div>
+    <div class="col">
+      <div>
+        <img src="./images/electric-appliances.png" width="60" alt="Οικιακές Συσκευές">
+        <p>Οικιακές Συσκευές</p>
+      </div>
+    </div>
+    <div class="col">
+      <div>
+        <img src="./images/plumber.png" width="60" alt="Υδραυλικοί">
+        <p>Υδραυλικοί</p>
+      </div>
+    </div>
+    <div class="col">
+      <div>
+        <img src="./images/electrician.png" width="60" alt="Ηλεκτρολόγοι">
+        <p>Ηλεκτρολόγοι</p>
+      </div>
+    </div>
+    <div class="col">
+      <div>
+        <img src="./images/carpenter.png" width="60" alt="Ξυλουργοί">
+        <p>Ξυλουργοί</p>
+      </div>
+    </div>
+    <div class="col">
+      <div>
+        <img src="./images/painter.png" width="60" alt="Ελαιοχρωματιστές">
+        <p>Ελαιοχρωματιστές</p>
+      </div>
+    </div>
+    <div class="col">
+      <div>
+        <img src="./images/ceramic.png" width="60" alt="Τοποθέτηση Πλακιδίων">
+        <p>Τοποθέτηση Πλακιδίων</p>
+      </div>
+    </div>
+    <div class="col">
+      <div>
+        <img src="./images/drywall.png" width="60" alt="Γυψοσανίδες">
+        <p>Γυψοσανίδες</p>
+      </div>
+    </div>
+    <div class="col">
+      <div>
+        <img src="./images/business.png" width="60" alt="Κουφώματα">
+        <p>Κουφώματα</p>
+      </div>
+    </div>
+    <div class="col">
+      <div>
+        <img src="./images/worker.png" width="60" alt="Οικοδομικές Εργασίες">
+        <p>Οικοδομικές Εργασίες</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Become a Partner Button -->
+<div class="container text-center my-5">
+  <a href="#" class="btn btn-lg btn-success rounded-pill px-5 shadow-sm">🤝 Γίνε Συνεργάτης</a>
+</div>
 
   <!-- Footer -->
   <footer>
