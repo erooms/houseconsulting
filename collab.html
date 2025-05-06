@@ -344,8 +344,8 @@ select, input[type="text"] {
   </nav>
 
   <!-- Search Section -->
-<div class="container my-5 d-flex justify-content-center align-items-center min-vh-100">
-    <div class="card shadow-lg rounded-4 p-4 border-0" style="max-width: 800px; width: 100%; background-color: #fefdf9;">
+<div class="container my-5  px-2 d-flex justify-content-center align-items-center min-vh-100">
+    <div class="card shadow-lg rounded-4 p-4 border-0 w-100 px-3" style="max-width: 800px; width: 100%; background-color: #fefdf9;">
       <form id="technician-form">
         <div class="text-center mb-4">
           <h3 class="fw-bold">Προσθήκη Τεχνίτη</h3>
@@ -354,17 +354,17 @@ select, input[type="text"] {
   
         <div class="mb-3">
           <label for="onoma" class="form-label">Όνομα</label>
-          <input type="text" class="form-control rounded-pill" style="width: 600px;"  id="onoma" name="Onoma" required>
+          <input type="text" class="form-control rounded-pill  w-100"  id="onoma" name="Onoma" required>
         </div>
   
         <div class="mb-3">
           <label for="epitheto" class="form-label">Επίθετο</label>
-          <input type="text" class="form-control  rounded-pill" style="width: 600px;"  id="epitheto" name="Epitheto" required>
+          <input type="text" class="form-control  rounded-pill w-100" id="epitheto" name="Epitheto" required>
         </div>
   
         <div class="mb-3">
           <label for="poli" class="form-label">Πόλη</label>
-          <select class="form-select rounded-pill" id="poli" name="Poli" required  style="width: 600px;">
+          <select class="form-select rounded-pill w-100" id="poli" name="Poli" required >
             <option value="">Επιλέξτε Πόλη</option>
             <option value="Ιωάννινα">Ιωάννινα</option>
             <option value="Αθήνα">Αθήνα</option>
@@ -376,7 +376,7 @@ select, input[type="text"] {
   
         <div class="mb-3">
           <label for="eidikotita" class="form-label">Ειδικότητα</label>
-          <select class="form-select rounded-pill" id="eidikotita" name="Eidikotita" required style="width: 600px;">
+          <select class="form-select rounded-pill w-100" id="eidikotita" name="Eidikotita" required >
             <option disabled selected>Επιλέξτε Ειδικότητα</option>
             <option>Υδραυλικοί</option>
             <option>Ηλεκτρολόγοι</option>
@@ -389,35 +389,36 @@ select, input[type="text"] {
   
         <div class="mb-3">
           <label for="timi" class="form-label">Τιμή (€)</label>
-          <input type="number" class="form-control rounded-pill" id="timi" name="Timi" step="1" style="width: 600px;">
+          <input type="number" class="form-control rounded-pill w-100 " id="timi" name="Timi" step="1" >
         </div>
   
         <div class="mb-3">
           <label for="sxetika" class="form-label">Σχετικά</label>
-          <textarea class="form-control rounded-3" id="sxetika" style="width: 600px;" name="Sxetika" rows="2"></textarea>
+          <textarea class="form-control rounded-3" id="sxetika" name="Sxetika" rows="2"></textarea>
         </div>
   
         <div class="mb-3">
-          <label for="epimerous" class="form-label" style="width: 600px;">Επιμέρους</label>
-          <textarea class="form-control rounded-3" id="epimerous" name="Epimerous" rows="2" style="width: 600px;"></textarea>
+          <label for="epimerous" class="form-label" >Επιμέρους</label>
+          <textarea class="form-control rounded-3 w-100" id="epimerous" name="Epimerous" rows="2" ></textarea>
         </div>
   
         <div class="mb-3">
           <label for="diathesimotita" class="form-label" >Διαθεσιμότητα</label>
-          <input type="text" class="form-control rounded-pill" id="diathesimotita" style="width: 600px;" name="Diathesimotita" placeholder="π.χ. Δευτ - Παρ 09:00 - 17:00">
+          <input type="text" class="form-control rounded-pill w-100" id="diathesimotita" name="Diathesimotita" placeholder="π.χ. Δευτ - Παρ 09:00 - 17:00">
         </div>
   
         <div class="mb-4">
           <label for="phone" class="form-label">Τηλέφωνο</label>
-          <input type="tel" class="form-control rounded-pill" id="phone" style="width: 600px;" name="Phone" placeholder="π.χ. +306987123456">
+          <input type="tel" class="form-control rounded-pill w-100" id="phone" name="Phone" placeholder="π.χ. +306987123456">
         </div>
   
-        <button type="submit" class="btn btn-success w-100 rounded-pill py-2" style="width: 600px;">
+        <button type="submit" class="btn btn-success w-100 rounded-pill py-2" >
           <i class="bi bi-check-circle me-2"></i>Υποβολή Τεχνίτη
         </button>
       </form>
     </div>
   </div>
+  
   <!-- Footer -->
   <footer>
     <div class="container">
